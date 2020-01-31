@@ -49,7 +49,6 @@ Productions
 p = ldvo ldf ;
 ldf = {decfonc} df ldf | {vide};
 df = id po ld pf ldvo ibloc;
-
 ldvo = {lisdec} ld pv | {vide};
 ld = {decvar} dv ldvb | {vide};
 ldvb = {decvar2} virgule dv ldvb | {vide};

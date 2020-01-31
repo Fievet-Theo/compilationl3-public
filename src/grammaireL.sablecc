@@ -3,6 +3,9 @@ Package sc;
 Helpers
 
 lettre = [['a' .. 'z'] + ['A' .. 'Z']];
+chiffre = ['0' .. '9'];
+alpha = [lettre + ['_' + '$']];
+alphanum = [alpha + chiffre];
 
 Tokens
 
@@ -25,8 +28,8 @@ af = '}';
 virgule = ',';
 co = '[';
 cf = ']';
-nb = [0 .. 9]+;
-id = [['a' .. 'z'] + ['a' .. 'z']];
+nb = ['0' .. '9']+;
+id = lettre alphanum*;
 si = 'si';
 sinon = 'sinon';
 alors = 'alors';
@@ -42,6 +45,17 @@ Ignored Tokens
 espaces, commentaire;
 
 Productions
+
+p = ldvo ldf ;
+ldf = {decfonc} df ldf | {vide};
+df = id po ld pf ldvo ibloc;
+
+ldvo = {lisdec} ld pv | {vide};
+ld = {decvar} dv ldvb | {vide};
+ldvb = {decvar2} virgule dv ldvb | {vide};
+
+dv = entier id dv1 pv;
+dv1 = {tab} co nb cf | {vide};
 
 expr = {ou} expr ou expr1 | {expr1} expr1;
 expr1 = {et} expr1 et expr2 | {expr2} expr2;
@@ -65,24 +79,10 @@ ia = {egalexpr} var egal expr pv | {egalaf} var egal af;
 iaf = aff;
 aff = id po le pf pv;
 ibloc = ao li af;
-ibloc1 = ao li af;
 isi = {sialors} si expr alors ibloc
- |    {sinon} si expr alors ibloc sinon ibloc1;
+ |    {sinon} si expr alors [l1]:ibloc sinon [l2]:ibloc;
 itq = tantque expr faire ibloc;
 ir = retour expr;
-
-
-
-
-p = ldvo ldf ;
-ldf = {decfonc} df ldf | {vide};
-df = id po ld pf ldvo ibloc;
-
-ldvo = {lisdec} ld pv | {vide};
-ld = {decvar} dv ldvb | {vide};
-ldvb = {decvar2} virgule dv ldvb | {vide};
-dv = entier id dv1;
-dv1 = {tab} co nb cf | {vide};
 
 iecr = ecrire po expr pf;
 

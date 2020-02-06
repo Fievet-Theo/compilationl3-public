@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
+    <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="ajout case">
+      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sc/analysis/Sc2sa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Sc2sa.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,8 +51,16 @@
       <option name="presentableId" value="Default" />
       <updated>1580992372382</updated>
       <workItem from="1580992373753" duration="87000" />
-      <workItem from="1580995076932" duration="1949000" />
+      <workItem from="1580995076932" duration="3106000" />
     </task>
+    <task id="LOCAL-00001" summary="ajout case">
+      <created>1580997053368</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1580997053368</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -68,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ajout case" />
+    <option name="LAST_COMMIT_MESSAGE" value="ajout case" />
   </component>
 </project>

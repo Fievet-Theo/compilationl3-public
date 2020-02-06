@@ -1,7 +1,9 @@
 package sc.analysis;
 
+import sc.node.*;
+import sa.*;
 
-public class Sc2sa extends DepthfirsAdapter {
+public class Sc2sa extends DepthFirstAdapter {
     private SaNode returnValue;
 
     public void caseAP(AP node)
@@ -18,17 +20,6 @@ public class Sc2sa extends DepthfirsAdapter {
         node.getExpr4().apply(this);
         op2 = (SaExp)this.returnValue;
         this.returnValue = new SaExpAdd(op1, op2);
-    }
-
-    public void caseAOuExpr(AOuExpr node)
-    {
-        SaExp op1 =null;
-        SaExp op2 =null;
-        node.getExpr().apply(this);
-        op1 = (SaExp)this.returnValue;
-        node.getExpr1().apply(this);
-        op2 = (SaExp)this.returnValue;
-        this.returnValue = new SaExpOr(op1, op2);
     }
 
     public void caseAOuExpr(AOuExpr node)
@@ -65,5 +56,7 @@ public class Sc2sa extends DepthfirsAdapter {
     }
 
 
-
+    public SaNode getRoot() {
+        return returnValue;
+    }
 }

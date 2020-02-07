@@ -11,7 +11,6 @@ public final class AApp extends PApp
     private TPo _po_;
     private PLe _le_;
     private TPf _pf_;
-    private TPv _pv_;
 
     public AApp()
     {
@@ -22,8 +21,7 @@ public final class AApp extends PApp
         @SuppressWarnings("hiding") TId _id_,
         @SuppressWarnings("hiding") TPo _po_,
         @SuppressWarnings("hiding") PLe _le_,
-        @SuppressWarnings("hiding") TPf _pf_,
-        @SuppressWarnings("hiding") TPv _pv_)
+        @SuppressWarnings("hiding") TPf _pf_)
     {
         // Constructor
         setId(_id_);
@@ -34,8 +32,6 @@ public final class AApp extends PApp
 
         setPf(_pf_);
 
-        setPv(_pv_);
-
     }
 
     @Override
@@ -45,8 +41,7 @@ public final class AApp extends PApp
             cloneNode(this._id_),
             cloneNode(this._po_),
             cloneNode(this._le_),
-            cloneNode(this._pf_),
-            cloneNode(this._pv_));
+            cloneNode(this._pf_));
     }
 
     @Override
@@ -155,31 +150,6 @@ public final class AApp extends PApp
         this._pf_ = node;
     }
 
-    public TPv getPv()
-    {
-        return this._pv_;
-    }
-
-    public void setPv(TPv node)
-    {
-        if(this._pv_ != null)
-        {
-            this._pv_.parent(null);
-        }
-
-        if(node != null)
-        {
-            if(node.parent() != null)
-            {
-                node.parent().removeChild(node);
-            }
-
-            node.parent(this);
-        }
-
-        this._pv_ = node;
-    }
-
     @Override
     public String toString()
     {
@@ -187,8 +157,7 @@ public final class AApp extends PApp
             + toString(this._id_)
             + toString(this._po_)
             + toString(this._le_)
-            + toString(this._pf_)
-            + toString(this._pv_);
+            + toString(this._pf_);
     }
 
     @Override
@@ -216,12 +185,6 @@ public final class AApp extends PApp
         if(this._pf_ == child)
         {
             this._pf_ = null;
-            return;
-        }
-
-        if(this._pv_ == child)
-        {
-            this._pv_ = null;
             return;
         }
 
@@ -253,12 +216,6 @@ public final class AApp extends PApp
         if(this._pf_ == oldChild)
         {
             setPf((TPf) newChild);
-            return;
-        }
-
-        if(this._pv_ == oldChild)
-        {
-            setPv((TPv) newChild);
             return;
         }
 

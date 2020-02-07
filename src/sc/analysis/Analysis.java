@@ -13,9 +13,8 @@ public interface Analysis extends Switch
 
     void caseStart(Start node);
     void caseAP(AP node);
-    void caseADv(ADv node);
-    void caseATabDv1(ATabDv1 node);
-    void caseAVideDv1(AVideDv1 node);
+    void caseAEntierDv(AEntierDv node);
+    void caseATabDv(ATabDv node);
     void caseADecfoncLdf(ADecfoncLdf node);
     void caseAVideLdf(AVideLdf node);
     void caseADf(ADf node);
@@ -25,7 +24,6 @@ public interface Analysis extends Switch
     void caseAVideLd(AVideLd node);
     void caseADecvar2Ldvb(ADecvar2Ldvb node);
     void caseAVideLdvb(AVideLdvb node);
-    void caseAApp2(AApp2 node);
     void caseAApp(AApp node);
     void caseAIdVar(AIdVar node);
     void caseAIdexprVar(AIdexprVar node);
@@ -41,8 +39,7 @@ public interface Analysis extends Switch
     void caseAAppfoncI(AAppfoncI node);
     void caseARetourI(ARetourI node);
     void caseABlocI(ABlocI node);
-    void caseAEgalexprIa(AEgalexprIa node);
-    void caseAEgalafIa(AEgalafIa node);
+    void caseAIa(AIa node);
     void caseAIaf(AIaf node);
     void caseAIbloc(AIbloc node);
     void caseASialorsIsi(ASialorsIsi node);
@@ -94,11 +91,11 @@ public interface Analysis extends Switch
     void caseTCo(TCo node);
     void caseTCf(TCf node);
     void caseTNb(TNb node);
-    void caseTId(TId node);
     void caseTAlors(TAlors node);
     void caseTRetour(TRetour node);
     void caseTEntier(TEntier node);
     void caseTLire(TLire node);
+    void caseTId(TId node);
     void caseEOF(EOF node);
     void caseInvalidToken(InvalidToken node);
 }

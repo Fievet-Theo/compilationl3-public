@@ -8,6 +8,7 @@ import sc.analysis.*;
 public final class AIaf extends PIaf
 {
     private PApp _app_;
+    private TPv _pv_;
 
     public AIaf()
     {
@@ -15,10 +16,13 @@ public final class AIaf extends PIaf
     }
 
     public AIaf(
-        @SuppressWarnings("hiding") PApp _app_)
+        @SuppressWarnings("hiding") PApp _app_,
+        @SuppressWarnings("hiding") TPv _pv_)
     {
         // Constructor
         setApp(_app_);
+
+        setPv(_pv_);
 
     }
 
@@ -26,7 +30,8 @@ public final class AIaf extends PIaf
     public Object clone()
     {
         return new AIaf(
-            cloneNode(this._app_));
+            cloneNode(this._app_),
+            cloneNode(this._pv_));
     }
 
     @Override
@@ -60,11 +65,37 @@ public final class AIaf extends PIaf
         this._app_ = node;
     }
 
+    public TPv getPv()
+    {
+        return this._pv_;
+    }
+
+    public void setPv(TPv node)
+    {
+        if(this._pv_ != null)
+        {
+            this._pv_.parent(null);
+        }
+
+        if(node != null)
+        {
+            if(node.parent() != null)
+            {
+                node.parent().removeChild(node);
+            }
+
+            node.parent(this);
+        }
+
+        this._pv_ = node;
+    }
+
     @Override
     public String toString()
     {
         return ""
-            + toString(this._app_);
+            + toString(this._app_)
+            + toString(this._pv_);
     }
 
     @Override
@@ -74,6 +105,12 @@ public final class AIaf extends PIaf
         if(this._app_ == child)
         {
             this._app_ = null;
+            return;
+        }
+
+        if(this._pv_ == child)
+        {
+            this._pv_ = null;
             return;
         }
 
@@ -87,6 +124,12 @@ public final class AIaf extends PIaf
         if(this._app_ == oldChild)
         {
             setApp((PApp) newChild);
+            return;
+        }
+
+        if(this._pv_ == oldChild)
+        {
+            setPv((TPv) newChild);
             return;
         }
 

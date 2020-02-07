@@ -1,13 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="ajout case">
-      <change beforePath="$PROJECT_DIR$/.idea/src.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/src.iml" afterDir="false" />
+    <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammaireL.sablecc" beforeDir="false" afterPath="$PROJECT_DIR$/grammaireL.sablecc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/Analysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Analysis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Analysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/ReversedDepthFirstAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/ReversedDepthFirstAdapter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sc/analysis/Sc2sa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Sc2sa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/lexer.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/lexer.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/node/AApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/node/AApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AAppExpr6.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/node/AAppExpr6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AAppExpr6.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/node/AAppExpr6.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIaf.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/node/AIaf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/node/AIaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/TokenIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/TokenIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/TokenIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/TokenIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/parser.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/parser.dat" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,7 +37,13 @@
   </component>
   <component name="ProjectId" id="1XQxyM1DQllTYWtEb7mtdNGtK9G" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -28,15 +53,15 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -51,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1580992372382</updated>
       <workItem from="1580992373753" duration="87000" />
-      <workItem from="1580995076932" duration="3106000" />
+      <workItem from="1580995076932" duration="3394000" />
+      <workItem from="1581089382203" duration="6951000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -60,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1580997053368</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="bug fix">
+      <created>1580998384648</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1580998384648</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +114,13 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ajout case" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout case" />
+    <MESSAGE value="bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2" timestamp="1581096532377">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2/0.28.1920.1024@0.28.1920.1024" timestamp="1581096532377" />
   </component>
 </project>

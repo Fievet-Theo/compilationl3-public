@@ -81,19 +81,13 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
-    public void caseADv(ADv node)
+    public void caseAEntierDv(AEntierDv node)
     {
         defaultCase(node);
     }
 
     @Override
-    public void caseATabDv1(ATabDv1 node)
-    {
-        defaultCase(node);
-    }
-
-    @Override
-    public void caseAVideDv1(AVideDv1 node)
+    public void caseATabDv(ATabDv node)
     {
         defaultCase(node);
     }
@@ -148,12 +142,6 @@ public class AnalysisAdapter implements Analysis
 
     @Override
     public void caseAVideLdvb(AVideLdvb node)
-    {
-        defaultCase(node);
-    }
-
-    @Override
-    public void caseAApp2(AApp2 node)
     {
         defaultCase(node);
     }
@@ -249,13 +237,7 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
-    public void caseAEgalexprIa(AEgalexprIa node)
-    {
-        defaultCase(node);
-    }
-
-    @Override
-    public void caseAEgalafIa(AEgalafIa node)
+    public void caseAIa(AIa node)
     {
         defaultCase(node);
     }
@@ -561,12 +543,6 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
-    public void caseTId(TId node)
-    {
-        defaultCase(node);
-    }
-
-    @Override
     public void caseTAlors(TAlors node)
     {
         defaultCase(node);
@@ -586,6 +562,12 @@ public class AnalysisAdapter implements Analysis
 
     @Override
     public void caseTLire(TLire node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseTId(TId node)
     {
         defaultCase(node);
     }

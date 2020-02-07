@@ -7,7 +7,7 @@ import sc.analysis.*;
 @SuppressWarnings("nls")
 public final class AAppExpr6 extends PExpr6
 {
-    private PApp2 _app2_;
+    private PApp _app_;
 
     public AAppExpr6()
     {
@@ -15,10 +15,10 @@ public final class AAppExpr6 extends PExpr6
     }
 
     public AAppExpr6(
-        @SuppressWarnings("hiding") PApp2 _app2_)
+        @SuppressWarnings("hiding") PApp _app_)
     {
         // Constructor
-        setApp2(_app2_);
+        setApp(_app_);
 
     }
 
@@ -26,7 +26,7 @@ public final class AAppExpr6 extends PExpr6
     public Object clone()
     {
         return new AAppExpr6(
-            cloneNode(this._app2_));
+            cloneNode(this._app_));
     }
 
     @Override
@@ -35,16 +35,16 @@ public final class AAppExpr6 extends PExpr6
         ((Analysis) sw).caseAAppExpr6(this);
     }
 
-    public PApp2 getApp2()
+    public PApp getApp()
     {
-        return this._app2_;
+        return this._app_;
     }
 
-    public void setApp2(PApp2 node)
+    public void setApp(PApp node)
     {
-        if(this._app2_ != null)
+        if(this._app_ != null)
         {
-            this._app2_.parent(null);
+            this._app_.parent(null);
         }
 
         if(node != null)
@@ -57,23 +57,23 @@ public final class AAppExpr6 extends PExpr6
             node.parent(this);
         }
 
-        this._app2_ = node;
+        this._app_ = node;
     }
 
     @Override
     public String toString()
     {
         return ""
-            + toString(this._app2_);
+            + toString(this._app_);
     }
 
     @Override
     void removeChild(@SuppressWarnings("unused") Node child)
     {
         // Remove child
-        if(this._app2_ == child)
+        if(this._app_ == child)
         {
-            this._app2_ = null;
+            this._app_ = null;
             return;
         }
 
@@ -84,9 +84,9 @@ public final class AAppExpr6 extends PExpr6
     void replaceChild(@SuppressWarnings("unused") Node oldChild, @SuppressWarnings("unused") Node newChild)
     {
         // Replace child
-        if(this._app2_ == oldChild)
+        if(this._app_ == oldChild)
         {
-            setApp2((PApp2) newChild);
+            setApp((PApp) newChild);
             return;
         }
 

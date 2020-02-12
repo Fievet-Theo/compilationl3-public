@@ -1,4 +1,3 @@
-import sc.analysis.Sc2sa;
 import sc.parser.*;
 import sc.lexer.*;
 import sc.node.*;
@@ -38,8 +37,9 @@ public class Compiler
 
 	    System.out.println("[SA]");
 	    Sc2sa sc2sa = new Sc2sa();
-	    tree.apply(sc2sa);
-	    SaNode saRoot = sc2sa.getRoot();
+		tree.apply(sc2sa);
+		SaNode saRoot = sc2sa.getRoot();
+		System.out.println(sc2sa);
 	    new Sa2Xml(saRoot, baseName);
 		    
 	    /*System.out.println("[TABLE SYMBOLES]");

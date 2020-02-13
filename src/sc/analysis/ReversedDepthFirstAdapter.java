@@ -675,6 +675,27 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
         outABlocI(node);
     }
 
+    public void inAFoncecrireI(AFoncecrireI node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAFoncecrireI(AFoncecrireI node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAFoncecrireI(AFoncecrireI node)
+    {
+        inAFoncecrireI(node);
+        if(node.getIecrire() != null)
+        {
+            node.getIecrire().apply(this);
+        }
+        outAFoncecrireI(node);
+    }
+
     public void inAIa(AIa node)
     {
         defaultIn(node);
@@ -896,6 +917,43 @@ public class ReversedDepthFirstAdapter extends AnalysisAdapter
             node.getRetour().apply(this);
         }
         outAIr(node);
+    }
+
+    public void inAIecrire(AIecrire node)
+    {
+        defaultIn(node);
+    }
+
+    public void outAIecrire(AIecrire node)
+    {
+        defaultOut(node);
+    }
+
+    @Override
+    public void caseAIecrire(AIecrire node)
+    {
+        inAIecrire(node);
+        if(node.getPv() != null)
+        {
+            node.getPv().apply(this);
+        }
+        if(node.getPf() != null)
+        {
+            node.getPf().apply(this);
+        }
+        if(node.getExpr() != null)
+        {
+            node.getExpr().apply(this);
+        }
+        if(node.getPo() != null)
+        {
+            node.getPo().apply(this);
+        }
+        if(node.getEcrire() != null)
+        {
+            node.getEcrire().apply(this);
+        }
+        outAIecrire(node);
     }
 
     public void inAOuExpr(AOuExpr node)

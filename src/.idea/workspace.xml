@@ -5,7 +5,25 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/Sc2sa.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammaireL.sablecc" beforeDir="false" afterPath="$PROJECT_DIR$/grammaireL.sablecc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/Sc2sa.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sc2sa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/Sc2sa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sc2sa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/Analysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Analysis.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Analysis.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/analysis/ReversedDepthFirstAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/ReversedDepthFirstAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer$State.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/lexer/lexer.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/lexer.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/Parser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/TokenIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/TokenIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/TokenIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/TokenIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/parser/parser.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/parser.dat" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -60,7 +78,8 @@
       <workItem from="1580995076932" duration="3394000" />
       <workItem from="1581089382203" duration="7184000" />
       <workItem from="1581338188073" duration="1306000" />
-      <workItem from="1581499631644" duration="5243000" />
+      <workItem from="1581499631644" duration="5599000" />
+      <workItem from="1581594224849" duration="5989000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>

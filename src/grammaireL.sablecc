@@ -38,6 +38,7 @@ alors = ' alors';
 retour = 'retour';
 entier = 'entier ';
 lire = 'lire()';
+ecrire = 'ecrire';
 id = lettre alphanum*;
 
 Ignored Tokens
@@ -66,7 +67,7 @@ le1 = {virgule} virgule expr | {vide} ;
 
 li = {li} i li | {vide} ;
 
-i = {affectation} ia | {si} isi | {tantque} itq | {appfonc} iaf | {retour} ir | {bloc} ibloc;
+i = {affectation} ia | {si} isi | {tantque} itq | {appfonc} iaf | {retour} ir | {bloc} ibloc | {foncecrire} iecrire;
 
 ia = var egal expr pv ;
 iaf = app pv;
@@ -75,7 +76,7 @@ isi = {sialors} si expr alors ibloc
  |    {sinon} si expr alors [l1]:ibloc sinon [l2]:ibloc;
 itq = tantque expr faire ibloc;
 ir = retour expr pv;
-
+iecrire = ecrire po expr pf pv;
 
 
 expr = {ou} expr ou expr1 | {expr1} expr1;

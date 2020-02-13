@@ -237,6 +237,12 @@ public class AnalysisAdapter implements Analysis
     }
 
     @Override
+    public void caseAFoncecrireI(AFoncecrireI node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
     public void caseAIa(AIa node)
     {
         defaultCase(node);
@@ -274,6 +280,12 @@ public class AnalysisAdapter implements Analysis
 
     @Override
     public void caseAIr(AIr node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseAIecrire(AIecrire node)
     {
         defaultCase(node);
     }
@@ -562,6 +574,12 @@ public class AnalysisAdapter implements Analysis
 
     @Override
     public void caseTLire(TLire node)
+    {
+        defaultCase(node);
+    }
+
+    @Override
+    public void caseTEcrire(TEcrire node)
     {
         defaultCase(node);
     }

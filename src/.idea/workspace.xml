@@ -2,34 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ts/Sa2ts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammaireL.sablecc" beforeDir="false" afterPath="$PROJECT_DIR$/grammaireL.sablecc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/Sc2sa.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sc2sa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/Sc2sa.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sc2sa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/Analysis.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Analysis.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/Analysis.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/Analysis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/AnalysisAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/DepthFirstAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/analysis/ReversedDepthFirstAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/analysis/ReversedDepthFirstAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer$State.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer$State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/lexer/Lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/Lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/lexer/lexer.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sc/lexer/lexer.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/parser/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/Parser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/Parser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/parser/TokenIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/TokenIndex.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/parser/TokenIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/TokenIndex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sc/parser/parser.dat" beforeDir="false" afterPath="$PROJECT_DIR$/sc/parser/parser.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/Ts.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/Ts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/TsItem.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/TsItem.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/TsItemFct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/TsItemFct.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/TsItemParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/TsItemParam.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ts/TsItemVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/TsItemVar.java" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -52,15 +47,15 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -79,7 +74,8 @@
       <workItem from="1581089382203" duration="7184000" />
       <workItem from="1581338188073" duration="1306000" />
       <workItem from="1581499631644" duration="5599000" />
-      <workItem from="1581594224849" duration="5989000" />
+      <workItem from="1581594224849" duration="6354000" />
+      <workItem from="1581694514901" duration="5633000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -128,6 +124,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="fonction faite" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="693" y="289" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1581698659823">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="693" y="289" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1581698659823" />
     <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2" timestamp="1581096532377">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
@@ -136,5 +136,9 @@
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="555" y="276" width="802" height="527" key="Vcs.Push.Dialog.v2/0.28.1920.1024@0.28.1920.1024" timestamp="1581096537629" />
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1581694611740">
+      <screen x="0" y="28" width="1920" height="1024" />
+    </state>
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1581694611740" />
   </component>
 </project>

@@ -96,9 +96,9 @@ public class Sc2sa extends DepthFirstAdapter {
     @Override
     public void caseADecvarLd(ADecvarLd node)
     {
-        SaDecVar decVar = null;
+        SaDec decVar = null;
         node.getDv().apply(this);
-        decVar = (SaDecVar) this.returnValue;
+        decVar = (SaDec) this.returnValue;
 
         SaLDec listdec = null;
         node.getLdvb().apply(this);

@@ -1,0 +1,195 @@
+open source     > level 1, order 1, name '/usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv'
+system          > 
+system          > ConTeXt  ver: 2017.05.15 21:48 MKIV beta  fmt: 2019.12.12  int: english/english
+system          > 
+system          > 'cont-new.mkiv' loaded
+open source     > level 2, order 2, name '/usr/share/texmf/tex/context/base/mkiv/cont-new.mkiv'
+close source    > level 2, order 2, name '/usr/share/texmf/tex/context/base/mkiv/cont-new.mkiv'
+system          > files > jobname '=', input './=', result '='
+fonts           > latin modern fonts are not preloaded
+languages       > language 'en' is active
+
+tex error       > tex error on line 8 in file /usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv: ! I can't find file `./='.
+
+l.8 }
+   
+\clf_processjob ...uafunction \16>>clf_processjob 
+                                                  
+l.97 \getvalue{clf_processjob}
+                             % from cont-run.lua
+
+ 1     %D \module
+ 2     %D   [       file=cont-yes,
+ 3     %D        version=2012.06.01,
+ 4     %D          title=\CONTEXT\ Miscellaneous Macros,
+ 5     %D       subtitle=Startup Stub,
+ 6     %D         author=Hans Hagen,
+ 7     %D           date=\currentdate,
+ 8 >>  %D      copyright={PRAGMA ADE \& \CONTEXT\ Development Team}]
+ 9     %C
+10     %C This module is part of the \CONTEXT\ macro||package and is
+11     %C therefore copyrighted by \PRAGMA. See mreadme.pdf for
+12     %C details.
+13     
+14     % At some point I will reconsider the \starttext .. \stoptext
+15     % wraping as we can assume proper styling. It's a left-over from
+16     % mkii that we need to get rid of.
+17     
+18     % now moved to cont-run.lua
+
+Please type another input file name:         if(node.getParametres() != null) node.getParametres().accept(this);
+
+tex error       > tex error on line 8 in file /usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv: ! I can't find file `if(node.getParametres()'.
+
+l.8 }
+   
+\clf_processjob ...uafunction \16>>clf_processjob 
+                                                  
+l.97 \getvalue{clf_processjob}
+                             % from cont-run.lua
+
+ 1     %D \module
+ 2     %D   [       file=cont-yes,
+ 3     %D        version=2012.06.01,
+ 4     %D          title=\CONTEXT\ Miscellaneous Macros,
+ 5     %D       subtitle=Startup Stub,
+ 6     %D         author=Hans Hagen,
+ 7     %D           date=\currentdate,
+ 8 >>  %D      copyright={PRAGMA ADE \& \CONTEXT\ Development Team}]
+ 9     %C
+10     %C This module is part of the \CONTEXT\ macro||package and is
+11     %C therefore copyrighted by \PRAGMA. See mreadme.pdf for
+12     %C details.
+13     
+14     % At some point I will reconsider the \starttext .. \stoptext
+15     % wraping as we can assume proper styling. It's a left-over from
+16     % mkii that we need to get rid of.
+17     
+18     % now moved to cont-run.lua
+
+Please type another input file name:         context = Context.LOCAL;
+open source     > level 2, order 3, name '/usr/share/texlive/texmf-dist/doc/context/third/markdown/examples/context.tex'
+fonts           > preloading latin modern fonts (third stage)
+fonts           > otf loading > loading '/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf', hash 'lmroman10-regular'
+otf reader      > not unicoded: dblgrave.ts1 star.alt
+otf reader      > 41 bogus names removed (verbose unicode)
+fonts           > otf loading > loading done
+fonts           > otf loading > saving '/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf' in cache
+system          > lua > compiling '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/lmroman10-regular.tma' into '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/lmroman10-regular.tmc'
+system          > lua > dumping '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/lmroman10-regular.tma' into '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/lmroman10-regular.tmc' stripped
+fonts           > otf loading > loading, optimizing, packing and caching time 0.114
+fonts           > otf loading > loading '/usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf', hash 'latinmodern-math'
+otf reader      > not unicoded: copyleft copyleft.st copyleft.sts died died.st died.sts leaf leaf.st leaf.sts perthousandzero perthousandzero.st perthousandzero.sts star.alt star.alt.st star.alt.sts threequartersemdash threequartersemdash.st threequartersemdash.sts
+otf reader      > 1459 bogus names removed (verbose unicode)
+otf reader      > 4801 base class tags removed (default is base)
+fonts           > otf loading > loading done
+fonts           > otf loading > saving '/usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf' in cache
+system          > lua > compiling '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/latinmodern-math.tma' into '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/latinmodern-math.tmc'
+system          > lua > dumping '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/latinmodern-math.tma' into '/amuhome/f17014612/.texlive2017/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442/fonts/otl/latinmodern-math.tmc' stripped
+fonts           > otf loading > loading, optimizing, packing and caching time 0.388
+fonts           > 'fallback modern-designsize rm 10pt' is loaded
+resolvers       > modules > 'markdown' is loaded
+open source     > level 3, order 4, name '/usr/share/texlive/texmf-dist/tex/context/third/markdown/t-markdown.tex'
+loading         > ConTeXt User Module / markdown
+open source     > level 4, order 5, name '/usr/share/texlive/texmf-dist/tex/generic/markdown/markdown.tex'
+(l.533) markdown.tex info: Using mode 2: Direct Lua access.
+close source    > level 4, order 5, name '/usr/share/texlive/texmf-dist/tex/generic/markdown/markdown.tex'
+resolvers       > modules > 'database' is loaded
+open source     > level 4, order 6, name '/usr/share/texmf/tex/context/modules/mkiv/m-database.mkiv'
+resolvers       > lua > loading file '/usr/share/texmf/tex/context/modules/mkiv/m-database.lua' succeeded
+close source    > level 4, order 6, name '/usr/share/texmf/tex/context/modules/mkiv/m-database.mkiv'
+close source    > level 3, order 6, name '/usr/share/texlive/texmf-dist/tex/context/third/markdown/t-markdown.tex'
+markdown        > Including markdown document "example.md".
+
+lua error       > lua error on line 16 in file /usr/share/texlive/texmf-dist/doc/context/third/markdown/examples/context.tex:
+
+[ctxlua]:1: example.md: No such file or directory
+stack traceback:
+	[C]: in function 'assert'
+	[ctxlua]:1: in main chunk
+
+ 6     \def\markdownOptionHashEnumerators{true}
+ 7     \def\markdownOptionDefinitionLists{true}
+ 8     \def\markdownOptionSmartEllipses{true}
+ 9     \def\markdownOptionFootnotes{true}
+10     \def\markdownOptionInlineFootnotes{true}
+11     \def\markdownOptionFencedCode{true}
+12     \def\markdownOptionContentBlocks{true}
+13     \definetyping [latex]
+14     \setuptyping  [latex] [option=TEX]
+15     \starttext
+16 >>    \markdownInput{example.md}
+17       \startmarkdown
+18     Here are some non-ASCII characters: *ěščřžýáíé*
+19     and ConTeXt special characters: *|*.
+20       \stopmarkdown
+21     \stoptext
+22     
+
+
+?         if(node.getVariable() != null) node.getVariable().accept(this);
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?         node.getCorps().accept(this);
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?         defaultOut(node);
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?         context = Context.LOCAL;
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+?         return null;
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? [A
+Type <return> to proceed, S to scroll future error messages,
+R to run without stopping, Q to run quietly,
+I to insert something, E to edit your file,
+1 or ... or 9 to ignore the next 1 to 9 tokens of input,
+H for help, X to quit.
+? 
+
+lua error       > lua error on line 16 in file /usr/share/texlive/texmf-dist/doc/context/third/markdown/examples/context.tex:
+
+[ctxlua]:1: example.md: No such file or directory
+stack traceback:
+	[C]: in function 'assert'
+	[ctxlua]:1: in main chunk
+
+ 6     \def\markdownOptionHashEnumerators{true}
+ 7     \def\markdownOptionDefinitionLists{true}
+ 8     \def\markdownOptionSmartEllipses{true}
+ 9     \def\markdownOptionFootnotes{true}
+10     \def\markdownOptionInlineFootnotes{true}
+11     \def\markdownOptionFencedCode{true}
+12     \def\markdownOptionContentBlocks{true}
+13     \definetyping [latex]
+14     \setuptyping  [latex] [option=TEX]
+15     \starttext
+16 >>    \markdownInput{example.md}
+17       \startmarkdown
+18     Here are some non-ASCII characters: *ěščřžýáíé*
+19     and ConTeXt special characters: *|*.
+20       \stopmarkdown
+21     \stoptext
+22     
+
+End of file on the terminal!
+
+

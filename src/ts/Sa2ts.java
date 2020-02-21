@@ -20,6 +20,8 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
 
     @Override
     public Void visit(SaDecVar node) {
+        defaultIn(node);
+
         String nom = node.getNom();
         if (context == Context.GLOBAL) {
             table.addVar(nom,1);
@@ -30,11 +32,15 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
         else {
             tableLocale.addParam(nom);
         }
+        defaultOut(node);
+
         return null;
     }
 
     @Override
     public Void visit(SaDecTab node) {
+        defaultIn(node);
+
         String nom = node.getNom();
         if (context == Context.GLOBAL) {
             table.addVar(nom,node.getTaille());
@@ -45,6 +51,8 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
         else {
             tableLocale.addParam(nom);
         }
+        defaultOut(node);
+
         return null;
     }
 
@@ -60,22 +68,38 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
         if(node.getVariable() != null) node.getVariable().accept(this);
         node.getCorps().accept(this);
         defaultOut(node);
-        context = Context.LOCAL;
+        //context = Context.LOCAL;
         return null;
     }
 
     @Override
     public Void visit(SaVarSimple node) {
+        defaultIn(node);
+
+        String nom = node.getNom();
+        table.getVar(nom);
+        defaultOut(node);
+
         return null;
     }
 
     @Override
     public Void visit(SaVarIndicee node) {
+        defaultIn(node);
+
+        node.getIndice().accept(this);
+        defaultOut(node);
+
         return null;
     }
 
     @Override
     public Void visit(SaAppel node) {
+        defaultIn(node);
+
+        if(node.getArguments() != null) node.getArguments().accept(this);
+        defaultOut(node);
+
         return null;
     }
 }

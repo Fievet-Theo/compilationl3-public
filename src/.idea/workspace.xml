@@ -2,17 +2,110 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ts/Sa2ts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3a.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInst.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstAdd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstAffect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstCall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstDiv.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstFBegin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstFEnd.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJump.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJumpIfEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJumpIfLess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJumpIfNotEqual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstMult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstRead.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstSub.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aInstWrite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aOp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aOperand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aTemp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aVar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/c3a/C3aVisitor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/grammaireL_ref.sablecc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sa/SaEnvironment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/add1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/add2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/affect.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/appel.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/div1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/div2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/et1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/et2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/inf1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/inf2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/mult1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/mult2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/ou1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/ou2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio3.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio4.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio5.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio6.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/si1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/si2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/sinon.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/sub1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/sub2.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/tab1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/tantque.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/varloc1.c3a" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/compare_arbres/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/evaluate.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/input/si1.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/input/varloc1.l" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/add1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/add2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/affect.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/appel.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/div1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/div2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/et1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/et2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/inf1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/inf2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/mult1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/mult2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/ou1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/ou2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio3.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio4.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio5.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio6.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/si1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/si2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/sinon.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/sub1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/sub2.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/tab1.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/tantque.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ts-ref/varloc1.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/Sa2Xml.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sa2Xml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaDecTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaDecTab.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaDecVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaDecVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaEval.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaEval.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaVarIndicee.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaVarIndicee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaVarSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaVarSimple.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/Ts.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/Ts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/TsItem.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/TsItem.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/TsItemFct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/TsItemFct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/TsItemParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/TsItemParam.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/TsItemVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/TsItemVar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/input/prio3.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/prio3.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/input/prio5.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/prio5.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/input/si.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/si2.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/input/sinon.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/sinon.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../test/input/tantque.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/tantque.l" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +168,9 @@
       <workItem from="1581338188073" duration="1306000" />
       <workItem from="1581499631644" duration="5599000" />
       <workItem from="1581594224849" duration="6354000" />
-      <workItem from="1581694514901" duration="5633000" />
+      <workItem from="1581694514901" duration="6212000" />
+      <workItem from="1582126675473" duration="19000" />
+      <workItem from="1582299187979" duration="322000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -136,9 +231,9 @@
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="555" y="276" width="802" height="527" key="Vcs.Push.Dialog.v2/0.28.1920.1024@0.28.1920.1024" timestamp="1581096537629" />
-    <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1581694611740">
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1582299615450">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1581694611740" />
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1582299615450" />
   </component>
 </project>

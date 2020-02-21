@@ -4,7 +4,8 @@ import ts.*;
 public class SaDecTab implements SaDec{
     private String nom;
     private int taille;
-    public TsItem tsItem;
+
+    public TsItemVar tsItem;
 
     public SaDecTab(String nom, int taille){
 	this.nom = nom;

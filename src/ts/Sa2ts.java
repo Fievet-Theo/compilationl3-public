@@ -12,6 +12,8 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
     public Sa2ts(SaNode saRoot) {
         this.table = new Ts();
         context = Context.GLOBAL;
+
+        saRoot.accept(this);
     }
 
     public Ts getTableGlobale() {
@@ -20,8 +22,6 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
 
     @Override
     public Void visit(SaDecVar node) {
-        defaultIn(node);
-
         String nom = node.getNom();
         if (context == Context.GLOBAL) {
             table.addVar(nom,1);
@@ -32,15 +32,11 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
         else {
             tableLocale.addParam(nom);
         }
-        defaultOut(node);
-
         return null;
     }
 
     @Override
     public Void visit(SaDecTab node) {
-        defaultIn(node);
-
         String nom = node.getNom();
         if (context == Context.GLOBAL) {
             table.addVar(nom,node.getTaille());
@@ -51,15 +47,12 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
         else {
             tableLocale.addParam(nom);
         }
-        defaultOut(node);
-
         return null;
     }
 
     @Override
     public Void visit(SaDecFonc node)
     {
-        defaultIn(node);
         tableLocale = new Ts();
 
         context = Context.PARAM;
@@ -68,37 +61,44 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
         if(node.getVariable() != null) node.getVariable().accept(this);
         node.getCorps().accept(this);
         defaultOut(node);
-        //context = Context.LOCAL;
+        context = Context.LOCAL;
         return null;
     }
 
     @Override
     public Void visit(SaVarSimple node) {
-        defaultIn(node);
+        TsItemVar var = this.table.getVar(node.getNom());
+        TsItemVar varLocale = this.tableLocale.getVar(node.getNom());
 
-        String nom = node.getNom();
-        table.getVar(nom);
-        defaultOut(node);
+        if (var == null && varLocale == null) {
+            System.err.println("variable non definie");
+            System.exit(1);
+        }
 
         return null;
     }
 
     @Override
     public Void visit(SaVarIndicee node) {
-        defaultIn(node);
+        TsItemVar var = this.table.getVar(node.getNom());
+        TsItemVar varLocale = this.tableLocale.getVar(node.getNom());
 
-        node.getIndice().accept(this);
-        defaultOut(node);
+        if (var == null && varLocale == null) {
+            System.err.println("variable non definie");
+            System.exit(1);
+        }
 
         return null;
     }
 
     @Override
     public Void visit(SaAppel node) {
-        defaultIn(node);
+        TsItemFct fct = this.table.getFct(node.getNom());
 
-        if(node.getArguments() != null) node.getArguments().accept(this);
-        defaultOut(node);
+        if (fct == null) {
+            System.err.println("fonction non definie");
+            System.exit(1);
+        }
 
         return null;
     }

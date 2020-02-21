@@ -2,110 +2,95 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3a.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aFunction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInst.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstAdd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstAffect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstCall.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstDiv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstFBegin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstFEnd.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJump.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJumpIfEqual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJumpIfLess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstJumpIfNotEqual.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstMult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstParam.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstRead.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstReturn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstSub.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aInstWrite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aLabel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aOp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aOperand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aTemp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aVar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/c3a/C3aVisitor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/grammaireL_ref.sablecc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sa/SaEnvironment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/add1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/add2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/affect.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/appel.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/div1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/div2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/et1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/et2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/inf1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/inf2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/mult1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/mult2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/ou1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/ou2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio3.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio4.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio5.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/prio6.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/si1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/si2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/sinon.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/sub1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/sub2.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/tab1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/tantque.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/c3a-ref/varloc1.c3a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/compare_arbres/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/evaluate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/input/si1.l" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/input/varloc1.l" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/add1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/add2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/affect.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/appel.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/div1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/div2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/et1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/et2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/inf1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/inf2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/mult1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/mult2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/ou1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/ou2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio3.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio4.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio5.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/prio6.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/si1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/si2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/sinon.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/sub1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/sub2.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/tab1.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/tantque.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../test/ts-ref/varloc1.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/Sa2Xml.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sa2Xml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/SaDecTab.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaDecTab.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/SaDecVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaDecVar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/SaEval.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaEval.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/SaVarIndicee.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaVarIndicee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sa/SaVarSimple.java" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaVarSimple.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/Ts.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/Ts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/TsItemFct.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/TsItemFct.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ts/TsItemVar.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/TsItemVar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/input/prio3.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/prio3.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/input/prio5.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/prio5.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/input/si.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/si2.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/input/sinon.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/sinon.l" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../test/input/tantque.l" beforeDir="false" afterPath="$PROJECT_DIR$/../test/input/tantque.l" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/Sa2Xml.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/Sa2Xml.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaDecTab.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaDecTab.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaDecVar.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaDecVar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaVarIndicee.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaVarIndicee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sa/SaVarSimple.class" beforeDir="false" afterPath="$PROJECT_DIR$/sa/SaVarSimple.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AAff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AApp2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AAppE6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AAppIapp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ABlocIbloc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AClosIsi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ADfDf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ADivE4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ADv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ADvLdv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEcrireI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEgalE1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEgalE2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEgalafIa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEgalexprIa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEtE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AEtE1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AFctApp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AFctVar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AILi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIaffI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIappI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIbloc1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIblocI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIecr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AInfE2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIretI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AIsiI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AItqI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ALLdf.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ALLdv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ALLdvo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ALLdvo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ALaffIaff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ALoopItq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AMinusE3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AMultE4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AMultdiviE3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ANbrE6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ANonE4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ANonE5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AOpenIsi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AOuE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/APProg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AParE5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AParE6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/APlusE2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/APlusE3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ARetIret.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/ATabDv1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AVarDv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AVarE6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AVideDv1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/AVideLdvo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PAff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PApp2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PDv1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PE6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PIaff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PIapp.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PIbloc1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PIecr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PIret.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PLdv.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PLdvo2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/PProg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TLAcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TLCroc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TLPar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TNbr.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TNon.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TPvir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TRAcc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TRCroc.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TRPar.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TRet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TTantq.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sc/node/TVir.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +156,7 @@
       <workItem from="1581694514901" duration="6212000" />
       <workItem from="1582126675473" duration="19000" />
       <workItem from="1582299187979" duration="322000" />
+      <workItem from="1582299615486" duration="729000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>

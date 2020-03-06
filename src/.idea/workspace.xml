@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/c3a/Sa2c3a.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ts/Sa2ts.java" beforeDir="false" afterPath="$PROJECT_DIR$/ts/Sa2ts.java" afterDir="false" />
     </list>
@@ -69,7 +70,9 @@
       <workItem from="1581694514901" duration="6212000" />
       <workItem from="1582126675473" duration="19000" />
       <workItem from="1582299187979" duration="322000" />
-      <workItem from="1582299615486" duration="5624000" />
+      <workItem from="1582299615486" duration="5775000" />
+      <workItem from="1583237899332" duration="7000" />
+      <workItem from="1583508067070" duration="3852000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -122,17 +125,17 @@
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="693" y="289" width="526" height="501" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1581698659823" />
-    <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2" timestamp="1581096532377">
+    <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2" timestamp="1583511932929">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2/0.28.1920.1024@0.28.1920.1024" timestamp="1581096532377" />
+    <state x="525" y="137" width="862" height="806" key="CommitChangelistDialog2/0.28.1920.1024@0.28.1920.1024" timestamp="1583511932929" />
     <state x="555" y="276" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1581096537629">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="555" y="276" width="802" height="527" key="Vcs.Push.Dialog.v2/0.28.1920.1024@0.28.1920.1024" timestamp="1581096537629" />
-    <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1582299615450">
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1583237898130">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
-    <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1582299615450" />
+    <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1583237898130" />
   </component>
 </project>

@@ -53,7 +53,10 @@ public class Sa2ts extends SaDepthFirstVisitor<Void> {
     @Override
     public Void visit(SaDecFonc node)
     {
+        System.out.println("decFonc");
         tableLocale = new Ts();
+        int nbArg = (node.getParametres() != null) ? node.getParametres().length() : 0;
+        table.addFct(node.getNom(), nbArg, tableLocale, node);
 
         context = Context.PARAM;
         if(node.getParametres() != null) node.getParametres().accept(this);

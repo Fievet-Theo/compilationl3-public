@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/nasm/C3a2nasm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nasm/C3a2nasm.java" beforeDir="false" afterPath="$PROJECT_DIR$/nasm/C3a2nasm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <workItem from="1583237899332" duration="7000" />
       <workItem from="1583508067070" duration="5658000" />
       <workItem from="1583840507872" duration="5000" />
-      <workItem from="1584113980925" duration="2033000" />
+      <workItem from="1584113980925" duration="6652000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -118,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584114430817</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="nasm update">
+      <created>1584116030582</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1584116030582</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +150,8 @@
     <MESSAGE value="c3a" />
     <MESSAGE value="blip blop" />
     <MESSAGE value="c3a update" />
-    <option name="LAST_COMMIT_MESSAGE" value="c3a update" />
+    <MESSAGE value="nasm update" />
+    <option name="LAST_COMMIT_MESSAGE" value="nasm update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="608" y="169" width="376" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1584114928138">
@@ -160,14 +167,18 @@
     </state>
     <state x="730" y="65" width="862" height="806" key="CommitChangelistDialog2/0.28.1600.844@0.28.1600.844" timestamp="1584116029020" />
     <state x="938" y="177" width="862" height="806" key="CommitChangelistDialog2/0.28.1920.1024@0.28.1920.1024" timestamp="1583513534568" />
-    <state x="463" y="232" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1584114432338">
+    <state x="463" y="232" width="802" height="527" key="Vcs.Push.Dialog.v2" timestamp="1584116031822">
       <screen x="0" y="28" width="1600" height="844" />
     </state>
-    <state x="463" y="232" key="Vcs.Push.Dialog.v2/0.28.1600.844@0.28.1600.844" timestamp="1584114432338" />
+    <state x="463" y="232" width="802" height="527" key="Vcs.Push.Dialog.v2/0.28.1600.844@0.28.1600.844" timestamp="1584116031822" />
     <state x="555" y="276" width="802" height="527" key="Vcs.Push.Dialog.v2/0.28.1920.1024@0.28.1920.1024" timestamp="1583513236655" />
     <state x="616" y="368" key="com.intellij.ide.util.TipDialog" timestamp="1583840509838">
       <screen x="0" y="28" width="1920" height="1024" />
     </state>
     <state x="616" y="368" key="com.intellij.ide.util.TipDialog/0.28.1920.1024@0.28.1920.1024" timestamp="1583840509838" />
+    <state x="445" y="54" width="710" height="792" key="find.popup" timestamp="1584116321597">
+      <screen x="0" y="28" width="1600" height="844" />
+    </state>
+    <state x="445" y="54" width="710" height="792" key="find.popup/0.28.1600.844@0.28.1600.844" timestamp="1584116321597" />
   </component>
 </project>

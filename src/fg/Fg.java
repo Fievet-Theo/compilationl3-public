@@ -17,6 +17,16 @@ public class Fg implements NasmVisitor <Void> {
 	this.node2Inst = new HashMap< Node, NasmInst>();
 	this.label2Inst = new HashMap< String, NasmInst>();
 	this.graph = new Graph();
+        for (NasmInst nasmInst : nasm.listeInst) {
+            Node node = graph.newNode();
+            inst2Node.put(nasmInst, node);
+            node2Inst.put(node, nasmInst);
+            label2Inst.put(nasmInst.label.toString(), nasmInst);
+            //nasmInst.accept(this);
+        }
+        for (NasmInst nasmInst : nasm.listeInst) {
+            nasmInst.accept(this);
+        }
     }
 
     public void affiche(String baseFileName){
@@ -45,30 +55,120 @@ public class Fg implements NasmVisitor <Void> {
 	    out.println(")\t" + nasmInst);
 	}
     }
+
+    private void addEdgeSuivant(NasmInst inst) {
+        Node from = inst2Node.get(inst);
+        NasmInst nasmInst = nasm.listeInst.get(from.label()+1);
+        Node to = inst2Node.get(nasmInst);
+        graph.addEdge(from, to);
+    }
+
+    private void addEdgeJump(NasmInst inst) {
+        Node from = inst2Node.get(inst);
+        NasmInst nasmInst = label2Inst.get(inst.label.toString());
+        Node to = inst2Node.get(nasmInst);
+        graph.addEdge(from, to);
+    }
     
-    public Void visit(NasmAdd inst){return null;}
-    public Void visit(NasmCall inst){return null;}
-    public Void visit(NasmDiv inst){return null;}
-    public Void visit(NasmJe inst){return null;}
-    public Void visit(NasmJle inst){return null;}
-    public Void visit(NasmJne inst){return null;}
-    public Void visit(NasmMul inst){return null;}
-    public Void visit(NasmOr inst){return null;}
-    public Void visit(NasmCmp inst){return null;}
-    public Void visit(NasmInst inst){return null;}
-    public Void visit(NasmJge inst){return null;}
-    public Void visit(NasmJl inst){return null;}
-    public Void visit(NasmNot inst){return null;}
-    public Void visit(NasmPop inst){return null;}
-    public Void visit(NasmRet inst){return null;}
-    public Void visit(NasmXor inst){return null;}
-    public Void visit(NasmAnd inst){return null;}
-    public Void visit(NasmJg inst){return null;}
-    public Void visit(NasmJmp inst){return null;}
-    public Void visit(NasmMov inst){return null;}
-    public Void visit(NasmPush inst){return null;}
-    public Void visit(NasmSub inst){return null;}
-    public Void visit(NasmEmpty inst){return null;}
+    public Void visit(NasmAdd inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmCall inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmDiv inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmJe inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmJle inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmJne inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmMul inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmOr inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmCmp inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmInst inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmJge inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmJl inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmNot inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmPop inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmRet inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmXor inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmAnd inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmJg inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmJmp inst){
+        addEdgeSuivant(inst);
+        addEdgeJump(inst);
+        return null;
+    }
+    public Void visit(NasmMov inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmPush inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmSub inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
+    public Void visit(NasmEmpty inst){
+        addEdgeSuivant(inst);
+        return null;
+    }
 
     public Void visit(NasmAddress operand){return null;}
     public Void visit(NasmConstant operand){return null;}

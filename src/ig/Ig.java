@@ -21,7 +21,6 @@ public class Ig {
 	this.nasm = fgs.nasm;
 	this.regNb = this.nasm.getTempCounter();
 	this.int2Node = new Node[regNb];
-	this.build();
     }
 
     public void construction(){
@@ -29,6 +28,7 @@ public class Ig {
 
     public int[] getPrecoloredTemporaries()
     {
+    	return null;
     }
 
 

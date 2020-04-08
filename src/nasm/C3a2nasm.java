@@ -127,6 +127,20 @@ public class C3a2nasm implements C3aVisitor<NasmOperand> {
 
     @Override
     public NasmOperand visit(C3aInstRead inst) {
+        NasmOperand label = (inst.label != null) ? inst.label.accept(this) : null;
+        NasmRegister reg_eax = nasm.newRegister();
+        reg_eax.colorRegister(Nasm.REG_EAX);
+
+        NasmOperand sinput = new NasmLabel("sinput");
+        NasmOperand readline = new NasmLabel("readline");
+        NasmOperand atoi = new NasmLabel("atoi");
+
+        nasm.ajouteInst(new NasmMov(label, reg_eax, sinput, ""));
+        nasm.ajouteInst(new NasmCall(null, readline, ""));
+        nasm.ajouteInst(new NasmCall(null, atoi, ""));
+
+        NasmRegister reg = nasm.newRegister();
+        nasm.ajouteInst(new NasmMov(null, reg, reg_eax, ""));
         return null;
     }
 
@@ -287,8 +301,7 @@ public class C3a2nasm implements C3aVisitor<NasmOperand> {
 
     @Override
     public NasmOperand visit(C3aVar oper) {
-        if (oper.index != null) { //global
-            System.out.println("global");
+        if (oper.index != null) {
             return new NasmAddress(new NasmLabel(oper.item.getIdentif()), '+', oper.index.accept(this));
         } else if (oper.item.isParam) { //parametre
             NasmRegister reg_ebp = nasm.newRegister();
@@ -296,13 +309,11 @@ public class C3a2nasm implements C3aVisitor<NasmOperand> {
             NasmOperand offset = new NasmConstant(2 + currentFct.getNbArgs() - oper.item.adresse);
             return new NasmAddress(reg_ebp, '+', offset);
         } else if (currentFct.getTable().getVar(oper.item.getIdentif()) != null) { //local
-            System.out.println("local");
             NasmRegister reg_ebp = nasm.newRegister();
             reg_ebp.colorRegister(Nasm.REG_EBP);
-            NasmOperand offset = new NasmConstant(oper.item.adresse);
+            NasmOperand offset = new NasmConstant(oper.item.adresse+1);
             return new NasmAddress(reg_ebp, '-', offset);
         }
-        System.out.println("rien");
         NasmOperand base = new NasmLabel(oper.item.getIdentif());
         return new NasmAddress(base, ' ', null);
     }

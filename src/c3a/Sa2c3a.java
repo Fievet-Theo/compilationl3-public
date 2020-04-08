@@ -202,11 +202,13 @@ public class Sa2c3a extends SaDepthFirstVisitor<C3aOperand> {
     }
 
     public C3aOperand visit(SaAppel node) {
-        SaLExp arg = node.getArguments();
-        for (int i = 0; i < node.getArguments().length(); i++) {
-            C3aInstParam param = new C3aInstParam(arg.getTete().accept(this), "");
-            c3a.ajouteInst(param);
-            arg = node.getArguments().getQueue();
+        if (node.getArguments() != null) {
+            SaLExp arg = node.getArguments();
+            for (int i = 0; i < node.getArguments().length(); i++) {
+                C3aInstParam param = new C3aInstParam(arg.getTete().accept(this), "");
+                c3a.ajouteInst(param);
+                arg = node.getArguments().getQueue();
+            }
         }
 
         C3aFunction function = new C3aFunction(table.getFct(node.getNom()));

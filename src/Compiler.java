@@ -53,14 +53,14 @@ public class Compiler
 	    System.out.println("[PRINT TS]");
 	    table.afficheTout(baseName);
 
-	    System.out.print("[EXEC SA] ");
-	    SaEval saEval = new SaEval(saRoot, table);
+	    //System.out.print("[EXEC SA] ");
+	    //SaEval saEval = new SaEval(saRoot, table);
 
-	    System.out.println("[SA OUT]");
-	    saEval.affiche(baseName);
+	    //System.out.println("[SA OUT]");
+	    //saEval.affiche(baseName);
 
 	    System.out.print("[BUILD C3A] ");
-	    C3a c3a = new Sa2c3a(saRoot).getC3a();
+	    C3a c3a = new Sa2c3a(saRoot, table).getC3a();
 
 	    System.out.print("[PRINT C3A] ");
 	    c3a.affiche(baseName);
@@ -73,7 +73,7 @@ public class Compiler
 	    Nasm nasm = new C3a2nasm(c3a, table).getNasm();
 	    System.out.println("[PRINT PRE NASM] ");
 	    nasm.affichePre(baseName);
-
+/*
 	    System.out.print("[BUILD FG] ");
 	    Fg fg = new Fg(nasm);
 	    System.out.print("[PRINT FG] ");
@@ -91,6 +91,8 @@ public class Compiler
 
 	    System.out.println("[ALLOCATE REGISTERS]");
 	    ig.allocateRegisters();
+
+ */
 
 	    System.out.println("[PRINT NASM]");
 	    nasm.affiche(baseName);

@@ -80,7 +80,8 @@
       <workItem from="1585832421307" duration="10955000" />
       <workItem from="1585854343053" duration="840000" />
       <workItem from="1585918777659" duration="8220000" />
-      <workItem from="1586169897079" duration="11247000" />
+      <workItem from="1586169897079" duration="11280000" />
+      <workItem from="1586348475795" duration="4353000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -145,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1585932642607</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="nasm update">
+      <created>1586197961080</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586197961080</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,10 +179,10 @@
     <MESSAGE value="c3a" />
     <MESSAGE value="blip blop" />
     <MESSAGE value="c3a update" />
-    <MESSAGE value="nasm update" />
     <MESSAGE value="c3a update et fg commencé" />
     <MESSAGE value="c3a termine" />
-    <option name="LAST_COMMIT_MESSAGE" value="c3a termine" />
+    <MESSAGE value="nasm update" />
+    <option name="LAST_COMMIT_MESSAGE" value="nasm update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="608" y="169" width="376" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1584114928138">

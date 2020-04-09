@@ -26,8 +26,7 @@ public class FgSolution{
 		for (NasmInst nasmInst : nasm.listeInst) {
 			this.use.put(nasmInst, new IntSet(nasm.listeInst.size()));
 			this.def.put(nasmInst, new IntSet(nasm.listeInst.size()));
-			def(nasmInst);
-			use(nasmInst);
+			useAndDef(nasmInst);
 		}
     }
     
@@ -53,168 +52,30 @@ public class FgSolution{
 	}
     }
 
-	private void use(NasmInst inst) {
-		if (inst.srcUse && inst.source instanceof NasmRegister && ((NasmRegister)inst.source).color != Nasm.REG_EBP && ((NasmRegister)inst.source).color != Nasm.REG_ESP) {
-			this.use.get(inst).add(operand2int.get(inst.source));
+    private void useAndDef(NasmInst inst) {
+		setUseAndDef(inst, inst.source);
+		if (inst.source instanceof NasmAddress) {
+			setUseAndDef(inst, ((NasmAddress) inst.source).base);
+			setUseAndDef(inst, ((NasmAddress) inst.source).offset);
 		}
-		if (inst.destUse && inst.destination instanceof NasmRegister && ((NasmRegister)inst.destination).color != Nasm.REG_EBP && ((NasmRegister)inst.destination).color != Nasm.REG_ESP) {
-			this.use.get(inst).add(operand2int.get(inst.destination));
+
+		setUseAndDef(inst, inst.destination);
+		if (inst.destination instanceof NasmAddress) {
+			setUseAndDef(inst, ((NasmAddress) inst.destination).base);
+			setUseAndDef(inst, ((NasmAddress) inst.destination).offset);
 		}
 	}
 
-	private void def(NasmInst inst) {
-		if (inst.srcDef && inst.source instanceof NasmRegister && ((NasmRegister)inst.source).color != Nasm.REG_EBP && ((NasmRegister)inst.source).color != Nasm.REG_ESP) {
-			int num;
-			if (operand2int.containsKey(inst.source))
-				num = operand2int.get(inst.source);
-			else
-				num = iterNum++;
-			operand2int.put(inst.source, num);
-			this.def.get(inst).add(num);
-		}
-		if (inst.destDef && inst.destination instanceof NasmRegister && ((NasmRegister)inst.destination).color != Nasm.REG_EBP && ((NasmRegister)inst.destination).color != Nasm.REG_ESP) {
-			int num;
-			if (operand2int.containsKey(inst.destination))
-				num = operand2int.get(inst.destination);
-			else
-				num = iterNum++;
-			operand2int.put(inst.destination, num);
-			this.def.get(inst).add(num);
+	private void setUseAndDef (NasmInst inst, NasmOperand operand) {
+		if (operand instanceof NasmRegister && ((NasmRegister) operand).color != Nasm.REG_EBP && ((NasmRegister) operand).color != Nasm.REG_ESP) {
+			if (inst.destDef) {
+				this.def.get(inst).add(((NasmRegister) operand).val);
+			}
+			if (inst.destUse) {
+				this.use.get(inst).add(((NasmRegister) operand).val);
+			}
 		}
 	}
-
-//	public Void visit(NasmAdd inst){
-//		System.out.println("adddadddadad");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmCall inst){
-//		System.out.println("caaal");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmDiv inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJe inst){
-//		System.out.println("je");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJle inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJne inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmMul inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmOr inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmCmp inst){
-//		System.out.println("cmp");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmInst inst){
-//		System.out.println("inst");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJge inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJl inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmNot inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmPop inst){
-//		System.out.println("pop");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmRet inst){
-//		System.out.println("ret");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmXor inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmAnd inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJg inst){
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmJmp inst){
-//		System.out.println("jmp");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmMov inst){
-//		System.out.println("mov");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmPush inst){
-//		System.out.println("push");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmSub inst){
-//		System.out.println("sub");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//	public Void visit(NasmEmpty inst){
-//		System.out.println("empty");
-//		//use(inst);
-//		//def(inst);
-//		return null;
-//	}
-//
-//	public Void visit(NasmAddress operand){return null;}
-//	public Void visit(NasmConstant operand){return null;}
-//	public Void visit(NasmLabel operand){return null;}
-//	public Void visit(NasmRegister operand){return null;}
 }
 
     

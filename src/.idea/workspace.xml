@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b4868068-a495-4720-b78e-363f75f4912e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Compiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/Compiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fg/Fg.java" beforeDir="false" afterPath="$PROJECT_DIR$/fg/Fg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fg/FgSolution.java" beforeDir="false" afterPath="$PROJECT_DIR$/fg/FgSolution.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1585918777659" duration="8220000" />
       <workItem from="1586169897079" duration="11280000" />
       <workItem from="1586348475795" duration="12149000" />
-      <workItem from="1586430476591" duration="17876000" />
+      <workItem from="1586430476591" duration="20281000" />
     </task>
     <task id="LOCAL-00001" summary="ajout case">
       <created>1580997053368</created>
@@ -170,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586366579976</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="fg terminé">
+      <created>1586461427901</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1586461427901</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,7 +206,8 @@
     <MESSAGE value="nasm update" />
     <MESSAGE value="Merge branch 'master' of https://github.com/alexisnasr/compilationl3-public&#10;&#10;# Conflicts:&#10;#&#9;src/sa/SaEval.java" />
     <MESSAGE value="nasm terminé" />
-    <option name="LAST_COMMIT_MESSAGE" value="nasm terminé" />
+    <MESSAGE value="fg terminé" />
+    <option name="LAST_COMMIT_MESSAGE" value="fg terminé" />
   </component>
   <component name="WindowStateProjectService">
     <state x="608" y="169" width="376" height="561" key="#com.intellij.ide.util.MemberChooser" timestamp="1584114928138">

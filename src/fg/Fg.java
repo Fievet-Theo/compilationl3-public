@@ -1,6 +1,8 @@
 package fg;
 import nasm.*;
 import util.graph.*;
+import util.intset.IntSet;
+
 import java.util.*;
 import java.io.*;
 
@@ -21,7 +23,8 @@ public class Fg implements NasmVisitor <Void> {
             Node node = graph.newNode();
             inst2Node.put(nasmInst, node);
             node2Inst.put(node, nasmInst);
-            label2Inst.put(nasmInst.label.toString(), nasmInst);
+            if((nasmInst.label != null) && (label2Inst.get(nasmInst.label.toString()) == null))
+                label2Inst.put(nasmInst.label.toString(), nasmInst);
             //nasmInst.accept(this);
         }
         for (NasmInst nasmInst : nasm.listeInst) {
@@ -58,14 +61,18 @@ public class Fg implements NasmVisitor <Void> {
 
     private void addEdgeSuivant(NasmInst inst) {
         Node from = inst2Node.get(inst);
+        if (from.label()+1 == nasm.listeInst.size())
+            return;
         NasmInst nasmInst = nasm.listeInst.get(from.label()+1);
         Node to = inst2Node.get(nasmInst);
         graph.addEdge(from, to);
     }
 
     private void addEdgeJump(NasmInst inst) {
+        if (!label2Inst.containsKey(inst.address.toString()))
+            return;
         Node from = inst2Node.get(inst);
-        NasmInst nasmInst = label2Inst.get(inst.label.toString());
+        NasmInst nasmInst = label2Inst.get(inst.address.toString());
         Node to = inst2Node.get(nasmInst);
         graph.addEdge(from, to);
     }
@@ -75,7 +82,7 @@ public class Fg implements NasmVisitor <Void> {
         return null;
     }
     public Void visit(NasmCall inst){
-        addEdgeSuivant(inst);
+        addEdgeJump(inst);
         return null;
     }
     public Void visit(NasmDiv inst){
@@ -83,18 +90,18 @@ public class Fg implements NasmVisitor <Void> {
         return null;
     }
     public Void visit(NasmJe inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
+        addEdgeSuivant(inst);
         return null;
     }
     public Void visit(NasmJle inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
+        addEdgeSuivant(inst);
         return null;
     }
     public Void visit(NasmJne inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
+        addEdgeSuivant(inst);
         return null;
     }
     public Void visit(NasmMul inst){
@@ -114,13 +121,13 @@ public class Fg implements NasmVisitor <Void> {
         return null;
     }
     public Void visit(NasmJge inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
+        addEdgeSuivant(inst);
         return null;
     }
     public Void visit(NasmJl inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
+        addEdgeSuivant(inst);
         return null;
     }
     public Void visit(NasmNot inst){
@@ -144,12 +151,11 @@ public class Fg implements NasmVisitor <Void> {
         return null;
     }
     public Void visit(NasmJg inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
+        addEdgeSuivant(inst);
         return null;
     }
     public Void visit(NasmJmp inst){
-        addEdgeSuivant(inst);
         addEdgeJump(inst);
         return null;
     }
